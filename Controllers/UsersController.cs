@@ -19,7 +19,7 @@ namespace newapp.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet] // newapp/Users/
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
